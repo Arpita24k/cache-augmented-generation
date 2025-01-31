@@ -27,7 +27,7 @@ class LLMIntegration:
             raise ValueError("HUGGINGFACE_API_KEY is missing. Please add it to secrets.toml or .env file.")
 
         # Default model URL
-        self.api_url = "https://api-inference.huggingface.co/models/mistralai/Mistral-Small-24B-Instruct-2501"
+        self.api_url = "https://api-inference.huggingface.co/models/mistralai/Mistral-Nemo-Instruct-2407"
 
     def query_llm(self, prompt):
         """Query the Hugging Face API for a generated response with retry logic."""
